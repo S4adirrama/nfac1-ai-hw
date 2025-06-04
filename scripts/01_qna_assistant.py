@@ -16,8 +16,7 @@ def main():
     if not assistant_id or not vector_store_id:
         raise ValueError("Missing assistant_id or vector_store_id in assistant_config.json")
 
-    user_question = "Explain the difference between a definite and an indefinite integral in one paragraph."
-
+    user_question = input()
     # Create a thread
     thread = client.beta.threads.create()
 
